@@ -1,14 +1,14 @@
-#  BullFrog OS
+# BullFrog OS
+
 <p align="center">
   <img width="501" height="458" alt="BullFrog OS" src="https://github.com/user-attachments/assets/4995fcf8-d87c-42c4-ac91-38a86c8d52c4" />
 </p>
-
 
 ### Your Linux. Your environment. Your rules.
 
 BullFrog OS is a custom Debian-based Linux distribution featuring XFCE, Firefox ESR, and our own BullFrog welcome experience.
 
-##  Version 0.1.0
+## Version 0.1.0
 
 - **Base:** Debian 13 (Trixie)
 - **Architecture:** AMD64 (x86-64)
@@ -17,21 +17,21 @@ BullFrog OS is a custom Debian-based Linux distribution featuring XFCE, Firefox 
 - **Browser:** Firefox ESR
 - **Boot:** Live ISO, tested with UEFI
 
-##  Features
+## Features
 
--  Debian-based Linux system
--  XFCE desktop environment
--  Firefox ESR web browser
--  XFCE Terminal
+- Debian-based Linux system
+- XFCE desktop environment
+- Firefox ESR web browser
+- XFCE Terminal
 - NetworkManager
--  Garry the Frog mascot
--  Custom BullFrog welcome dialog
+- Garry the Frog mascot
+- Custom BullFrog welcome dialog
 
-##  Download
+## Download
 
 Visit the [BullFrog OS GitHub repository](https://github.com/CodeAnd-Copper/BullFrog-OS) to find the source code and any published release assets.
 
-##  Boot BullFrog OS manually from GRUB
+## Boot BullFrog OS manually from GRUB
 
 If the GRUB menu does not appear, you may be able to boot the live system manually.
 
@@ -78,31 +78,44 @@ boot
 
 If the files are on a different device, replace `(cd0)` with the correct device. If the kernel or initrd has a different name or location, adjust the paths accordingly.
 
-These are general Debian Live GRUB commands. The exact paths and boot parameters must be verified against the particular BullFrog OS ISO. If the commands fail, return to the GRUB menu or inspect the device contents before trying other paths.
+These are general Debian Live GRUB commands. The exact paths and boot parameters must be verified against the particular BullFrog OS ISO. If the commands fail, inspect the device contents and confirm the correct paths before trying other commands.
 
-##  Built with
+## Built with
 
 - Debian GNU/Linux
 - Debian Live Build
 - XFCE
 - Python and Zenity
 
-##  Creator
+## Creator
 
 Made by [CodeAndCopper](https://github.com/CodeAnd-Copper).
 
-BullFrog OS is an independent project built for Linux customization, experimentation, and learning.
+BullFrog OS is an independent project focused on Linux customization, experimentation, and learning.
 
-##  Feedback
+## Feedback
 
-Found a bug? Please open an issue in the GitHub repository and include the error message, hardware or VM details, and whether you used UEFI or BIOS.
+Found a bug? Please open an issue in the GitHub repository and include:
 
-##  License
+- Your computer or virtual machine configuration
+- Whether you used UEFI or BIOS
+- The exact error message
+- The steps needed to reproduce the issue
+
+## Support BullFrog OS ☕
+
+Enjoying BullFrog OS? You can support the project's development here:
+
+**[Buy me a coffee](https://buymeacoffee.com/CodeAndCopper)**
+
+Every bit of support is appreciated and helps motivate future improvements to BullFrog OS. 🐸
+
+## License
 
 MIT
 
 ---
 
-** BullFrog OS 0.1.0**
+**BullFrog OS 0.1.0**
 
 *Your Linux. Your environment. Your rules.*
