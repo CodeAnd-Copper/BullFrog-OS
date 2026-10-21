@@ -1,24 +1,108 @@
+#  BullFrog OS
+<p align="center">
+  <img width="501" height="458" alt="BullFrog OS" src="https://github.com/user-attachments/assets/4995fcf8-d87c-42c4-ac91-38a86c8d52c4" />
+</p>
 
-# BullFrog OS
 
-A custom Linux distribution built with C, C++, and x86-64 Assembly.
+### Your Linux. Your environment. Your rules.
 
-## Project Goals
+BullFrog OS is a custom Debian-based Linux distribution featuring XFCE, Firefox ESR, and our own BullFrog welcome experience.
 
-- Build custom system utilities in C.
-- Develop a desktop interface in C++.
-- Explore low-level x86-64 Assembly.
-- Use the Linux kernel as the foundation.
-- Package everything into a bootable Linux image.
+##  Version 0.1.0
 
-## Current Version
+- **Base:** Debian 13 (Trixie)
+- **Architecture:** AMD64 (x86-64)
+- **Desktop:** XFCE
+- **Display manager:** LightDM
+- **Browser:** Firefox ESR
+- **Boot:** Live ISO, tested with UEFI
 
-0.1.0 - Initial source code setup.
+##  Features
 
-## Architecture
+-  Debian-based Linux system
+-  XFCE desktop environment
+-  Firefox ESR web browser
+-  XFCE Terminal
+- NetworkManager
+-  Garry the Frog mascot
+-  Custom BullFrog welcome dialog
 
-Target: x86-64 (AMD64)
+##  Download
 
-## License
+Visit the [BullFrog OS GitHub repository](https://github.com/CodeAnd-Copper/BullFrog-OS) to find the source code and any published release assets.
 
-To be decided.
+##  Boot BullFrog OS manually from GRUB
+
+If the GRUB menu does not appear, you may be able to boot the live system manually.
+
+### 1. Find the ISO device
+
+At the `grub>` prompt, enter:
+
+```grub
+ls
+```
+
+Inspect the available devices. The ISO may appear as `(cd0)`, `(hd0)`, or another device.
+
+### 2. Find the kernel and initrd
+
+For example:
+
+```grub
+ls (cd0)/live/
+```
+
+Look for the kernel file, commonly named `vmlinuz`, and the initial RAM filesystem, commonly named `initrd.img`.
+
+**Use the actual filenames and paths displayed by your system.** The examples below assume both files are in `/live/` on `(cd0)`.
+
+### 3. Load the Linux kernel
+
+```grub
+set root=(cd0)
+linux /live/vmlinuz boot=live components
+```
+
+### 4. Load the initial RAM filesystem
+
+```grub
+initrd /live/initrd.img
+```
+
+### 5. Boot BullFrog OS
+
+```grub
+boot
+```
+
+If the files are on a different device, replace `(cd0)` with the correct device. If the kernel or initrd has a different name or location, adjust the paths accordingly.
+
+These are general Debian Live GRUB commands. The exact paths and boot parameters must be verified against the particular BullFrog OS ISO. If the commands fail, return to the GRUB menu or inspect the device contents before trying other paths.
+
+##  Built with
+
+- Debian GNU/Linux
+- Debian Live Build
+- XFCE
+- Python and Zenity
+
+##  Creator
+
+Made by [CodeAndCopper](https://github.com/CodeAnd-Copper).
+
+BullFrog OS is an independent project built for Linux customization, experimentation, and learning.
+
+##  Feedback
+
+Found a bug? Please open an issue in the GitHub repository and include the error message, hardware or VM details, and whether you used UEFI or BIOS.
+
+##  License
+
+MIT
+
+---
+
+** BullFrog OS 0.1.0**
+
+*Your Linux. Your environment. Your rules.*
