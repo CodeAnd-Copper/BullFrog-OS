@@ -27,11 +27,43 @@ BullFrog OS is a custom Debian-based Linux distribution featuring XFCE, Firefox 
 - Garry the Frog mascot
 - Custom BullFrog welcome dialog
 
+## System Requirements
+
+BullFrog OS 0.1.0 is designed for compatible 64-bit Intel and AMD computers.
+
+### Minimum Requirements (Provisional)
+
+- **Processor:** 64-bit x86-64 (AMD64) compatible CPU
+- **RAM:** 2 GB
+- **Storage:** 8 GB of available storage for an installation
+- **Graphics:** Graphics hardware supported by the Linux kernel and XFCE
+- **Boot mode:** UEFI
+- **Bootable USB:** 4 GB or larger
+- **Display:** 1024 × 768 resolution recommended
+
+### Recommended Requirements
+
+- **Processor:** Dual-core or better 64-bit CPU
+- **RAM:** 4 GB or more
+- **Storage:** 20 GB or more
+- **Graphics:** Hardware with compatible Linux graphics drivers
+- **Boot mode:** UEFI
+- **Internet:** Network connection for web browsing and downloading updates
+
+### Hardware Compatibility Notes
+
+- These requirements are preliminary estimates and have not been verified on every hardware configuration.
+- BullFrog OS 0.1.0 has been tested in a virtual machine using UEFI. Physical computer compatibility may vary.
+- Wi-Fi, Bluetooth, audio, graphics acceleration, and other hardware features may require additional drivers or firmware.
+- Legacy BIOS booting is not currently confirmed.
+- Test the live system before installation to check hardware compatibility.
+- Back up important data before installing any operating system.
+
 ## Download
 
 Visit the [BullFrog OS GitHub repository](https://github.com/CodeAnd-Copper/BullFrog-OS) to find the source code and any published release assets.
 
-## Boot BullFrog OS manually from GRUB
+## Boot BullFrog OS Manually from GRUB
 
 If the GRUB menu does not appear, you may be able to boot the live system manually.
 
@@ -79,7 +111,7 @@ If the files are on a different device, replace `(cd0)` with the correct device.
 
 These are general Debian Live GRUB commands. The exact paths and boot parameters must be verified against the particular BullFrog OS ISO. If the commands fail, inspect the device contents and confirm the correct paths before trying other commands.
 
-## Built with
+## Built With
 
 - Debian GNU/Linux
 - Debian Live Build
