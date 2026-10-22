@@ -60,14 +60,13 @@ Look for the kernel file, commonly named `vmlinuz`, and the initial RAM filesyst
 ### 3. Load the Linux kernel
 
 ```grub
-set root=(cd0)
-linux /live/vmlinuz boot=live components
+linux /live/vmlinuz boot=live
 ```
 
 ### 4. Load the initial RAM filesystem
 
 ```grub
-initrd /live/initrd.img
+initrd /boot/initrd.img
 ```
 
 ### 5. Boot BullFrog OS
