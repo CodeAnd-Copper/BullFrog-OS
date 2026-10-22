@@ -143,7 +143,8 @@ Enjoying BullFrog OS? You can support the project's development here:
 **[Buy me a coffee](https://buymeacoffee.com/CodeAndCopper)**
 
 Every bit of support is appreciated and helps motivate future improvements to BullFrog OS. 🐸
-
+## Other Architure Support
+right now BullFrog supports x86-64 (AMD64), In later updates i might add ARM64 or 32-bit support (i386)
 ## License
 
 MIT
