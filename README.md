@@ -123,7 +123,10 @@ These are general Debian Live GRUB commands. The exact paths and boot parameters
 Made by [CodeAndCopper](https://github.com/CodeAnd-Copper).
 
 BullFrog OS is an independent project focused on Linux customization, experimentation, and learning.
+## Username & Password
+Username: bullfrog
 
+Password: Gahan@2014
 ## Feedback
 
 Found a bug? Please open an issue in the GitHub repository and include:
